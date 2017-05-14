@@ -8,10 +8,18 @@ Licence URI: http://www.os-templates.com/template-terms
 -->
 <html>
 <head>
-<title>ClujTech Integrative</title>
+<title>ClujTech | Inscriere</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body id="top">
 <!-- ################################################################################################ -->
@@ -47,27 +55,27 @@ Licence URI: http://www.os-templates.com/template-terms
   <header id="header" class="clear"> 
     <!-- ################################################################################################ -->
     <div id="logo" class="fl_left">
-      <h1><a href="index.html">ClujTech Integrative</a></h1>
+      <h1><a href="../index.html">ClujTech Integrative</a></h1>
     </div>
     <!-- ################################################################################################ -->
     <nav id="mainav" class="fl_right">
       <ul class="clear">
-        <li class="active"><a href="index.html">Acasa</a></li>
+        <li class="active"><a href="../index.html">Acasa</a></li>
         <li><a class="drop" href="#">Despre program</a>
           <ul>
             <li><a class="drop">Informatii</a>
                 <ul>
-                    <li><a href="program/prezentare.html">Specializari</a></li>
-                    <li><a href="program/galerie.html">Galerie</a></li>
+                    <li><a href="prezentare.html">Specializari</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
                 </ul>
             </li>
-            <li><a href="program/inscriere.php">Inscriere</a></li>
+            <li><a href="inscriere.php">Inscriere</a></li>
           </ul>
         </li>
         <li><a class="drop" href="#">Cursanti</a>
           <ul>
-            <li><a href="program/cursuri-note.php">Cursuri & Note</a></li>
-            <li><a href="program/taxe.php">Taxe</a></li>
+            <li><a href="cursuri-note.php">Cursuri & Note</a></li>
+            <li><a href="taxe.php">Taxe</a></li>
           </ul>
         </li>
         <li><a href="secretariat/login.php">Secretariat</a></li>
@@ -79,47 +87,58 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper row2 bgded" style="background-image:url('images/print2/backgrounds/b1.jpg');">
+<div class="wrapper row2 bgded" style="background-image:url('../images/demo/backgrounds/1.png');">
   <div class="overlay">
-    <div id="intro" class="clear"> 
+    <div id="breadcrumb" class="clear"> 
       <!-- ################################################################################################ -->
-      <article class="one_third first">
-        <h3 class="heading">Specializari</h3>
-        <ul class="nospace">
-          <li>Web development: back-end</li>
-          <li>Web development: front-end</li>
-          <li>Devops: Administrator sistem Linux</li>
-          <li>Project Management in IT</li>
-          <li>Testare Quality Assurance</li>
-        </ul>
-        <p class="link"><a href="prezentare.html">Mai multe informatii &raquo;</a></p>
-      </article>
-      <article class="one_third">
-        <h3 class="heading">Ce iti propunem?</h3>
-        <ul class="nospace">
-          <li>Insertie imediata pe piata de munca</li>
-          <li>Cursuri provocatoare</li>
-          <li>Tehnologii de ultima ora</li>
-          <li>Personal specializat</li>
-          <li>Practica platita la firme de specialitate</li>
-        </ul>
-        <p class="link"><a href="prezentare.html">Mai multe informatii &raquo;</a></p>
-      </article>
-      <article class="one_third">
-        <h3 class="heading">Ce presupune?</h3>
-        <ul class="nospace">
-          <li>Durata program: 6 luni</li>
-          <li>Cost: 10.000 RON</li>
-          <li>Practica: 2 luni, full-time</li>
-          <li>Cursuri teoretice seara si in weekend</li>
-          <li>Acces la cursuri si dupa absolvire</li>
-        </ul>
-        <p class="link"><a href="inscriere.php">Ma inscriu! &raquo;</a></p>
-      </article>
+      <ul>
+        <li><a href="#">Acasa</a></li>
+        <li><a href="#">Despre program</a></li>
+        <li><a href="#">Informatii</a></li>
+        <li><a href="#">Inscriere</a></li>
+      </ul>
       <!-- ################################################################################################ -->
     </div>
   </div>
 </div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content"> 
+      <!-- ################################################################################################ -->
+      <h1> Formular de Inscriere: </h1>
+   <form action="adaugare_cursant.php" method="post">
+        <div class="form-group">
+            <label for="nume">Nume si Prenume:</label>
+            <input type="text" class="form-control" id="nume" name="nume">
+        </div>
+        <div class="form-group">
+            <label for="cnp">Cod Numeric Personal:</label>
+            <input type="text" class="form-control" id="cnp" name="cnp">
+        </div>
+        <div class="form-group">
+            <label for="email">Adresa de email:</label>
+            <input type="email" class="form-control" id="email" name="email">
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox" name="platit"> Platesc acum</label>
+        </div>
+        <button type="submit" class="btn btn-default">Ma inscriu!</button>
+   </form>
+
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
@@ -142,9 +161,9 @@ Licence URI: http://www.os-templates.com/template-terms
     <div class="one_quarter">
       <h6 class="title">Link-uri rapide</h6>
       <ul class="nospace linklist">
-        <li><a href="index.html">Mergi sus</a></li>
-        <li><a href="program/prezentare.html">Specializari</a></li>
-        <li><a href="program/inscriere.php">Inscriere</a></li>
+        <li><a href="inscriere.php">Mergi sus</a></li>
+        <li><a href="prezentare.html">Specializari</a></li>
+        <li><a href="inscriere.php">Inscriere</a></li>
       </ul>
     </div>
     <div class="one_quarter">
@@ -181,7 +200,7 @@ Licence URI: http://www.os-templates.com/template-terms
   </div>
 </div>
 <!-- JAVASCRIPTS -->
-<script src="layout/scripts/jquery.min.js"></script> 
-<script src="layout/scripts/jquery.mobilemenu.js"></script>
+<script src="../layout/scripts/jquery.min.js"></script> 
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
 </body>
 </html>

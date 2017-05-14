@@ -8,10 +8,18 @@ Licence URI: http://www.os-templates.com/template-terms
 -->
 <html>
 <head>
-<title>Abele | Pages | Gallery</title>
+<title>ClujTech | Inscriere</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body id="top">
 <!-- ################################################################################################ -->
@@ -22,17 +30,19 @@ Licence URI: http://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <div class="fl_left">
       <ul class="nospace linklist">
+<!--
         <li><a href="#">Link 1</a></li>
         <li><a href="#">Link 2</a></li>
         <li><a href="#">Link 3</a></li>
         <li><a href="#">Link 4</a></li>
         <li><a href="#">Link 5</a></li>
+-->        
       </ul>
     </div>
     <div class="fl_right">
       <ul class="nospace linklist">
-        <li><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
-        <li><i class="fa fa-envelope-o"></i> info@domain.com</li>
+        <li><i class="fa fa-phone"></i> +40 (747) 456 780</li>
+        <li><i class="fa fa-envelope-o"></i> contact@clujtech.ro</li>
       </ul>
     </div>
     <!-- ################################################################################################ -->
@@ -45,34 +55,30 @@ Licence URI: http://www.os-templates.com/template-terms
   <header id="header" class="clear"> 
     <!-- ################################################################################################ -->
     <div id="logo" class="fl_left">
-      <h1><a href="../index.html">Abele</a></h1>
+      <h1><a href="../index.html">ClujTech Integrative</a></h1>
     </div>
     <!-- ################################################################################################ -->
     <nav id="mainav" class="fl_right">
       <ul class="clear">
-        <li><a href="../index.html">Home</a></li>
-        <li class="active"><a class="drop" href="#">Pages</a>
+        <li class="active"><a href="../index.html">Acasa</a></li>
+        <li><a class="drop" href="#">Despre program</a>
           <ul>
-            <li class="active"><a href="gallery.html">Gallery</a></li>
-            <li><a href="full-width.html">Full Width</a></li>
-            <li><a href="sidebar-left.html">Sidebar Left</a></li>
-            <li><a href="sidebar-right.html">Sidebar Right</a></li>
-            <li><a href="basic-grid.html">Basic Grid</a></li>
-          </ul>
-        </li>
-        <li><a class="drop" href="#">Dropdown</a>
-          <ul>
-            <li><a href="#">Level 2</a></li>
-            <li><a class="drop" href="#">Level 2 + Drop</a>
-              <ul>
-                <li><a href="#">Level 3</a></li>
-                <li><a href="#">Level 3</a></li>
-              </ul>
+            <li><a class="drop">Informatii</a>
+                <ul>
+                    <li><a href="prezentare.html">Specializari</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                </ul>
             </li>
+            <li><a href="inscriere.php">Inscriere</a></li>
           </ul>
         </li>
-        <li><a href="#">Link Text</a></li>
-        <li><a href="#">Link Text</a></li>
+        <li><a class="drop" href="#">Cursanti</a>
+          <ul>
+            <li><a href="cursuri-note.php">Cursuri & Note</a></li>
+            <li><a href="taxe.php">Taxe</a></li>
+          </ul>
+        </li>
+        <li><a href="secretariat/login.php">Secretariat</a></li>
       </ul>
     </nav>
     <!-- ################################################################################################ -->
@@ -86,10 +92,10 @@ Licence URI: http://www.os-templates.com/template-terms
     <div id="breadcrumb" class="clear"> 
       <!-- ################################################################################################ -->
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Lorem</a></li>
-        <li><a href="#">Ipsum</a></li>
-        <li><a href="#">Dolor</a></li>
+        <li><a href="#">Acasa</a></li>
+        <li><a href="#">Despre program</a></li>
+        <li><a href="#">Informatii</a></li>
+        <li><a href="#">Inscriere</a></li>
       </ul>
       <!-- ################################################################################################ -->
     </div>
@@ -104,45 +110,26 @@ Licence URI: http://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <div class="content"> 
       <!-- ################################################################################################ -->
-      <div id="gallery">
-        <figure>
-          <header class="heading">Gallery Title Goes Here</header>
-          <ul class="nospace clear">
-            <li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/gallery.gif" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/gallery.gif" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/gallery.gif" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/gallery.gif" alt=""></a></li>
-            <li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/gallery.gif" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/gallery.gif" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/gallery.gif" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/gallery.gif" alt=""></a></li>
-            <li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/gallery.gif" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/gallery.gif" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/gallery.gif" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/gallery.gif" alt=""></a></li>
-          </ul>
-          <figcaption>Gallery Description Goes Here</figcaption>
-        </figure>
-      </div>
-      <!-- ################################################################################################ -->
-      <!-- ################################################################################################ -->
-      <nav class="pagination">
-        <ul>
-          <li><a href="#">&laquo; Previous</a></li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><strong>&hellip;</strong></li>
-          <li><a href="#">6</a></li>
-          <li class="current"><strong>7</strong></li>
-          <li><a href="#">8</a></li>
-          <li><a href="#">9</a></li>
-          <li><strong>&hellip;</strong></li>
-          <li><a href="#">14</a></li>
-          <li><a href="#">15</a></li>
-          <li><a href="#">Next &raquo;</a></li>
-        </ul>
-      </nav>
-      <!-- ################################################################################################ -->
+      <h1> Formular de Inscriere: </h1>
+   <form action="adaugare_cursant.php" method="post">
+        <div class="form-group">
+            <label for="nume">Nume si Prenume:</label>
+            <input type="text" class="form-control" id="nume" name="nume">
+        </div>
+        <div class="form-group">
+            <label for="cnp">Cod Numeric Personal:</label>
+            <input type="text" class="form-control" id="cnp" name="cnp">
+        </div>
+        <div class="form-group">
+            <label for="email">Adresa de email:</label>
+            <input type="email" class="form-control" id="email" name="email">
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox" name="platit"> Platesc acum</label>
+        </div>
+        <button type="submit" class="btn btn-default">Ma inscriu!</button>
+   </form>
+
     </div>
     <!-- ################################################################################################ -->
     <!-- / main body -->
@@ -152,41 +139,6 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper row4">
-  <section id="cta" class="clear"> 
-    <!-- ################################################################################################ -->
-    <div class="center btmspace-50">
-      <h2 class="nospace">Donec facilisis volutpat ligula nec egestas.</h2>
-      <p class="nospace">Integer varius enim id augue faucibus mattis. Pellentesque scelerisque nibh eu mi convallis, ac feugiat nulla tincidunt.</p>
-    </div>
-    <div class="group">
-      <div class="colour-1 one_half first">
-        <article class="group colour-1"> 
-          <!-- ################################################################################################ -->
-          <div class="one_half first"><img src="../images/demo/320x220.gif" alt=""></div>
-          <div class="one_half">
-            <h6 class="heading">Quisque vehicula urna sit amet pulvinar dapibus</h6>
-            <p class="link"><a class="btn" href="#">Read More &raquo;</a></p>
-          </div>
-          <!-- ################################################################################################ -->
-        </article>
-      </div>
-      <div class="colour-2 one_half">
-        <article class="group colour-2"> 
-          <!-- ################################################################################################ -->
-          <div class="one_half first"><img src="../images/demo/320x220.gif" alt=""></div>
-          <div class="one_half">
-            <h6 class="heading">Integer varius enim id augue faucibus mattis.</h6>
-            <p class="link"><a class="btn" href="#">Read More &raquo;</a></p>
-          </div>
-          <!-- ################################################################################################ -->
-        </article>
-      </div>
-    </div>
-    <!-- ################################################################################################ -->
-    <div class="clear"></div>
-  </section>
-</div>
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
@@ -194,35 +146,33 @@ Licence URI: http://www.os-templates.com/template-terms
   <footer id="footer" class="clear"> 
     <!-- ################################################################################################ -->
     <div class="one_half first">
-      <h6 class="title">Lorem ipsum dolor</h6>
-      <p class="nospace btmspace-30">Donec sed ultrices eros. Nulla facilisi. Aliquam purus urna, porta non faucibus nec, luctus vitae ante. Suspendisse potenti. Morbi sollicitudin viverra urna, vel auctor purus volutpat vel.</p>
+      <h6 class="title">Despre ClujTech Integrative</h6>
+      <p class="nospace btmspace-30">ClujTech Integrative este un program postuniversitar fictiv creat pentru realizarea Proiectului Integrator 2 IAP de catre Cristian Hainic. Toate informatiile de pe acest website au caracter fictiv si orice asemanare cu persoane sau obiectele din viata reala este pur intamplatoare.</p>
       <ul class="nospace">
         <li class="btmspace-10">
           <address>
-          <span class="fa fa-map-marker"></span> Street Name &amp; Number, Town, Postcode/Zip
+          <span class="fa fa-map-marker"></span> Strada Dudului 21, Cluj-Napoca, 400667
           </address>
         </li>
-        <li class="btmspace-10"><span class="fa fa-phone"></span> +00 (123) 456 7890</li>
-        <li><span class="fa fa-envelope-o"></span> info@domain.com</li>
+        <li class="btmspace-10"><span class="fa fa-phone"></span> +40 (747) 456 780</li>
+        <li><span class="fa fa-envelope-o"></span> contact@clujtech.ro</li>
       </ul>
     </div>
     <div class="one_quarter">
-      <h6 class="title">Quick Links</h6>
+      <h6 class="title">Link-uri rapide</h6>
       <ul class="nospace linklist">
-        <li><a href="#">Home Page</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="inscriere.php">Mergi sus</a></li>
+        <li><a href="prezentare.html">Specializari</a></li>
+        <li><a href="inscriere.php">Inscriere</a></li>
       </ul>
     </div>
     <div class="one_quarter">
-      <h6 class="title">Keep in Touch</h6>
+      <h6 class="title">Abonare la ClujTech</h6>
       <form class="btmspace-50" method="post" action="#">
         <fieldset>
-          <legend>Newsletter:</legend>
+          <legend>Aboneaza-te la ClujTech</legend>
           <input class="btmspace-15" type="text" value="" placeholder="Email">
-          <button type="submit" value="submit">Submit</button>
+          <button type="submit" value="submit">Ma abonez!</button>
         </fieldset>
       </form>
       <ul class="faico clear">
@@ -244,8 +194,8 @@ Licence URI: http://www.os-templates.com/template-terms
 <div class="wrapper row6">
   <div id="copyright" class="clear"> 
     <!-- ################################################################################################ -->
-    <p class="fl_left">Copyright &copy; 2015 - All Rights Reserved - <a href="#">Domain Name</a></p>
-    <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <p class="fl_left">Copyright &copy; 2017 - Toate drepturile rezervate - <a href="index.html">ClujTech Integrative</a></p>
+    <!-- <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p> -->
     <!-- ################################################################################################ -->
   </div>
 </div>
