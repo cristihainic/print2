@@ -77,10 +77,13 @@ Licence URI: http://www.os-templates.com/template-terms
         <li><a class="drop" href="#">Cursanti</a>
           <ul>
             <li><a href="cursuri-note.php">Cursuri & Note</a></li>
-            <li><a href="taxe.php">Taxe</a></li>
           </ul>
         </li>
-        <li><a href="secretariat/login.php">Secretariat</a></li>
+        <li><a class="drop" href="#">Secretariat</a>
+            <ul>
+                <li><a href="taxe.php">Taxe</a></li>
+            </ul>
+        </li>
       </ul>
     </nav>
     <!-- ################################################################################################ -->
@@ -130,7 +133,7 @@ Licence URI: http://www.os-templates.com/template-terms
                     $materie = $row["Materie"];
                     $cursant = $row["Cursant"];
                     $nota = $row["Nota"];                    
-                    echo "<tr><td></td><td>".$materie."</td><td>".$cursant."</b></a></td><td>".$nota."</td></tr>";
+                    echo "<tr><td></td><td>".$materie."</td><td>".$cursant."</td><td>".$nota."</td></tr>";
                 }    
             }
             catch(PDOException $e) {
