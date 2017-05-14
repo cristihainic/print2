@@ -12,6 +12,7 @@ Licence URI: http://www.os-templates.com/template-terms
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -20,6 +21,7 @@ Licence URI: http://www.os-templates.com/template-terms
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 <body id="top">
 <!-- ################################################################################################ -->
@@ -93,9 +95,8 @@ Licence URI: http://www.os-templates.com/template-terms
       <!-- ################################################################################################ -->
       <ul>
         <li><a href="#">Acasa</a></li>
-        <li><a href="#">Despre program</a></li>
-        <li><a href="#">Informatii</a></li>
-        <li><a href="#">Inscriere</a></li>
+        <li><a href="#">Cursanti</a></li>
+        <li><a href="#">Cursuri & Note</a></li>
       </ul>
       <!-- ################################################################################################ -->
     </div>
@@ -110,25 +111,33 @@ Licence URI: http://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <div class="content"> 
       <!-- ################################################################################################ -->
-      <h1> Formular de Inscriere: </h1>
-   <form action="adaugare_cursant.php" method="post">
-        <div class="form-group">
-            <label for="nume">Nume si Prenume:</label>
-            <input type="text" class="form-control" id="nume" name="nume">
-        </div>
-        <div class="form-group">
-            <label for="cnp">Cod Numeric Personal:</label>
-            <input type="text" class="form-control" id="cnp" name="cnp">
-        </div>
-        <div class="form-group">
-            <label for="email">Adresa de email:</label>
-            <input type="email" class="form-control" id="email" name="email">
-        </div>
-        <div class="checkbox">
-            <label><input type="checkbox" name="platit"> Platesc acum</label>
-        </div>
-        <button type="submit" class="btn btn-default">Ma inscriu!</button>
-   </form>
+      <h1> Ultimele rezultate la examene: </h1>
+
+    <table class='table table-hover text-center'>
+        <th><td><b>Materie</b></td><td><b>Cursant</b></td><td><b>Nota</b></td></th>
+        
+        
+        <?php
+            include 'credentials.php';
+            try {
+                $connection = new PDO("mysql:host=$dbhost;charset=utf8;dbname=$dbname", "$dbuser", "$dbpassword");
+                
+                $query = $connection->prepare("SELECT * FROM materii");
+                $query->execute();
+                
+                
+                foreach ($query->fetchAll() as $row) {
+                    $materie = $row["Materie"];
+                    $cursant = $row["Cursant"];
+                    $nota = $row["Nota"];                    
+                    echo "<tr><td></td><td>".$materie."</td><td>".$cursant."</b></a></td><td>".$nota."</td></tr>";
+                }    
+            }
+            catch(PDOException $e) {
+                die("Impossible to connect: " . $e->getMessage());
+            }
+        ?>
+    </table>
 
     </div>
     <!-- ################################################################################################ -->
@@ -161,7 +170,7 @@ Licence URI: http://www.os-templates.com/template-terms
     <div class="one_quarter">
       <h6 class="title">Link-uri rapide</h6>
       <ul class="nospace linklist">
-        <li><a href="inscriere.php">Mergi sus</a></li>
+        <li><a href="cursuri-note.php">Mergi sus</a></li>
         <li><a href="prezentare.html">Specializari</a></li>
         <li><a href="inscriere.php">Inscriere</a></li>
       </ul>
